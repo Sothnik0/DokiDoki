@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(./img/anotherbg\ \(1\).jpg);
+    animation: moveBack 50s linear infinite;
+}
+
+/*Generalizações*/
+#NavOrg,  #natsuki-box, .chracter-container, #gameBox{
+    background: rgba( 255, 163, 217, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba(223, 119, 255, 0.37);
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#NavOrg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#AboutOrg{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.upperList, li, a, h1, p, #btnJogo{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'AnnieUseYourTelescope', sans-serif;
+
+    color: black;
+    text-decoration: none;
+}
+/*Generalizações*/
+
+/*NavBar*/
+#NavOrg {
+    padding: 15px;
+}
+
+.upperList, li, a{
+    display: flex;
+    list-style: none;
+    margin-left: 30px;
+    padding-right: 10px;
+}
+
+#Logo {
+    animation: moveLogo 5s linear infinite;
+}
+
+/*Sobre*/
+
+#natsuki-box{
+    height: 450px;
+    width: 450px;
+    border-radius: 24px;
+
+    overflow: hidden;
+}
+
+#natsuki{
+    position: relative;
+    width: 590px;
+    height: 590px;
+    bottom: 80px;
+    right: 80px;
+}
+
+#nat-sticker{
+    position: relative;
+    bottom: 68%;
+    z-index: -1;
+
+    animation: moveAround 4s infinite linear;
+}
+
+/*Personagens*/
+.containers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12.5rem;
+}
+
+.chracter-container{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.textStyle {
+    width: 40rem;
+}
+
+/*game*/
+
+#gameBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 1100px;
+    height: 400px;
+
+    border-radius: 24px;
+}
+
+#natsticker2{
+    animation: jumpy 2s  infinite;
+}
+
+#btnJogo{
+    padding: 15px;
+
+    border-radius: 24px;
+
+    margin-left: 5%;
+    cursor: pointer;
+
+    background-color: #f8f6f0;
+    transition: 0.2s;
+}
+
+#btnJogo:hover{
+    background: rgba( 255, 163, 217);
+}
+
+/*Contatc*/
+
+
+#about-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*spooky*/
+#spooky{
+    position: absolute;
+    width: 100%;
+    height: 523%;
+
+    background-color: black;
+
+    z-index: 10;
+    visibility: hidden;
+}
+
+#hang {
+    position: relative; 
+    bottom: 10px; 
+    animation: hanging 10s linear infinite;
+}
+
+
+/*Animation*/
+
+@keyframes moveBack {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -100% -100%;
+    }
+}
+
+@keyframes moveLogo {
+    0% {
+        transform: scale(1) rotate(0deg);
+    } 50% {
+        transform: scale(1.1) rotate(5deg);
+    } 100% {
+        transform: scale(1) rotate(0deg);
+    }     
+}
+
+@keyframes moveAround {
+    0% {
+        transform: rotateY(0deg);
+    } 100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes jumpy {
+    0% {
+        transform: translateY(0px);
+    } 50% {
+        transform: translateY(10px);
+    } 100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes hanging {
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    25% {
+        transform: translateX(-5px) translateY(-5px);
+    }
+    50% {
+        transform: translateX(5px) translateY(-5px);
+    }
+    75% {
+        transform: translateX(5px) translateY(-5px);
+    } 
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+
+
+/*Fonts*/
+
+@font-face {
+    font-family: 'AnnieUseYourTelescope'; 
+    src: url('fonts/AnnieUseYourTelescope.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
