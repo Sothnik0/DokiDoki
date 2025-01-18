@@ -148,7 +148,7 @@ body{
 #spooky{
     position: absolute;
     width: 100%;
-    height: 503.2%;
+    height: 525%;
 
     background-color: black;
 
@@ -320,7 +320,7 @@ body{
     }
 
     #spooky{
-        height: 100%;
+        height: 650%;
     }
 
     #hang{
