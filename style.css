@@ -230,3 +230,105 @@ body{
     font-weight: normal;
     font-style: normal;
 }
+
+/*Response*/
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    .upperList {
+        visibility: hidden;
+    }
+
+    .hambMenu{
+        visibility: hidden;
+
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    #Logo{
+        margin-right: 180px;
+    }
+
+    #AboutOrg{
+        display: block;
+    }
+
+    #dokitext{
+        margin-left: 20px;
+    }
+    #desc{
+        margin-left: 10px;
+    }
+
+    p {
+        margin-left: 0px;
+        font-size: 10px;
+    }
+
+    .textStyle{
+        margin-left: 0px;
+    }
+
+    .infotext{
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+
+    .containers{
+        margin-left: -60px;
+    }
+
+    #btnJogo{
+        padding: 10px;
+        margin-right: 200px;
+    }
+
+    #gameLogo{
+        visibility: hidden;
+    }
+
+    #gameTitle{
+        margin-right: 150px;
+    }
+
+    #natsticker2{
+        height: 0px;
+        width: 0px;
+        visibility: hidden;
+    }
+
+    #foot{
+        padding: 90px;
+        width: 210px;
+    }
+
+    #lastCreator{
+        margin-right: -50px;
+    }
+
+    #creator{
+        text-align: center;
+        width: 200px;
+    }
+
+    #spooky{
+        height: 100%;
+    }
+
+    #hang{
+        height: 480px;
+        width: 220px;
+    }
+
+    #deadEnd {
+        text-align: center;
+    }
+}
